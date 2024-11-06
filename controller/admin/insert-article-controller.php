@@ -4,7 +4,7 @@
 session_start();
 
 require_once "../../config/config.php";
-require_once '../../service/articles-service.php';
+require_once '../../model/articles-repository.php';
 require_once "../../service/authentification-service.php";
 // si la clé is_authenticated n'existe pas dans la session de l'utilisateur
 // ou qu'elle n'est pas égale à true
@@ -20,9 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['title'] &&
         $_POST['content'] &&
         $_POST['image'] &&
+        $_POST['option'] &&
         mb_strlen($_POST['title']) > 3 &&
         mb_strlen($_POST['content']) > 4 &&
-        mb_strlen($_POST['image']) > 2
+        mb_strlen($_POST['image']) > 2 &&
+        mb_strlen($_POST['option'])
     ) {
 
         // je créé un tableau contenant toutes mes valeurs
@@ -31,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             "title" => $_POST['title'],
             "content" => $_POST['content'],
             "image" => $_POST['image'],
+            "option" => $_POST['option'],
         ];
 
         insertArticle($isArticleCreated);

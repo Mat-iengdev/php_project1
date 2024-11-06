@@ -14,6 +14,10 @@
 
                 <p><?php echo $article['content']; ?></p>
                 <img src="<?php echo $article['image']; ?>">
+
+
+                    <p><?php echo $article['option']; ?></p>
+
             </article>
 
         <?php } ?>

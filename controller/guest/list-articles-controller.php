@@ -1,7 +1,7 @@
 <?php
 
 require_once "../../config/config.php";
-require_once '../../service/articles-service.php';
+require_once '../../model/articles-repository.php';
 // Je rappelle ma fonction
 $articles = findArticles();
 
