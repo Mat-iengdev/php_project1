@@ -1,6 +1,7 @@
 <?php
 
 function redirectNotLoggedUser() {
+
     session_start();
 
     if (!key_exists('is_authenticated', $_SESSION)  ||
