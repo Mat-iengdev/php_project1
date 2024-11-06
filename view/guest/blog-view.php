@@ -3,9 +3,7 @@
     <main>
         <figure>
 
-            <?php foreach ($articles
-
-            as $article) { ?>
+            <?php foreach ($articles as $article) { ?>
             <?php if ($article["isPublished"]) { ?>
 
 

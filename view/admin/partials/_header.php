@@ -13,6 +13,7 @@
     <nav>
         <ul>
             <li><a href="http://localhost:8888/exercice2.php/controller/guest/index-controller.php">Accueil</a></li>
+            <li><a href="http://localhost:8888/exercice2.php/controller/guest/list-articles-controller.php">Info article</a></li>
             <li><a href="http://localhost:8888/exercice2.php/controller/admin/insert-article-controller.php">Insertion d'article</a></li>
             <li><a href="http://localhost:8888/exercice2.php/controller/admin/dashboard-controller.php">Dashboard admin</a></li>
         </ul>

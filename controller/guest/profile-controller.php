@@ -1,4 +1,6 @@
 <?php
+
+require_once "../../config/config.php";
 $profile = [
     "firstName" => "Mathis",
     "lastName" => "Ieng",

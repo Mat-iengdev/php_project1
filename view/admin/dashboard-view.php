@@ -5,7 +5,4 @@
 </main>
 
 
-
-
-
 <?php require_once('../../view/admin/partials/_footer.php'); ?>

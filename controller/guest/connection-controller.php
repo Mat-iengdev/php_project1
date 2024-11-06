@@ -1,5 +1,7 @@
 <?php
 
+require_once "../../config/config.php";
+
 $isFormSubmitted = false;
 $hasFormErrors = false;
 

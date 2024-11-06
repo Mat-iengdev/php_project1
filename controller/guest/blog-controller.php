@@ -1,5 +1,7 @@
 <?php
 
+require_once "../../config/config.php";
+
 $articles = [
     "1" => [
         "title" => "Logo Nike",
