@@ -2,8 +2,13 @@
 
 require_once "../../config/config.php";
 require_once '../../model/articles-repository.php';
-// Je rappelle ma fonction
-$articles = findArticles();
+
+if (array_key_exists('category', $_GET)) {
+    $category = $_GET['category'];
+    $articles = findArticlesByCategory($category);
+} else {
+    $articles = findArticles();
+}
 
 function isStringTooLong($stringToCheck) {
     return mb_strlen($stringToCheck, 'UTF-8') > 50;

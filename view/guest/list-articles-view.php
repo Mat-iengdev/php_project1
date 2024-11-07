@@ -3,6 +3,18 @@
     <main>
         <h1>Les articles du blog</h1>
 
+        <p>Filtrer les articles : </p>
+
+        <form method="get">
+        <select id="" name="category">
+            <option value="series">Séries</option>
+            <option value="films">Films</option>
+            <option value="animes">Animés</option>
+        </select>
+        <input type="submit">
+        </form>
+
+
         <?php foreach ($articles as $article) { ?>
 
             <article>
@@ -15,8 +27,7 @@
                 <p><?php echo $article['content']; ?></p>
                 <img src="<?php echo $article['image']; ?>">
 
-
-                    <p><?php echo $article['option']; ?></p>
+                <p><?php echo $article['category']; ?></p>
 
             </article>
 

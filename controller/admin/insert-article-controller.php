@@ -20,11 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['title'] &&
         $_POST['content'] &&
         $_POST['image'] &&
-        $_POST['option'] &&
+        $_POST['category'] &&
         mb_strlen($_POST['title']) > 3 &&
         mb_strlen($_POST['content']) > 4 &&
         mb_strlen($_POST['image']) > 2 &&
-        mb_strlen($_POST['option'])
+        mb_strlen($_POST['category'])
     ) {
 
         // je créé un tableau contenant toutes mes valeurs
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             "title" => $_POST['title'],
             "content" => $_POST['content'],
             "image" => $_POST['image'],
-            "option" => $_POST['option'],
+            "category" => $_POST['category'],
         ];
 
         insertArticle($isArticleCreated);

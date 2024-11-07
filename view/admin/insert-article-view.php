@@ -13,11 +13,11 @@
         <label for="image">Image</label>
         <input type="text" name="image" placeholder="Entrez l'image"/>
 
-        <label for="option">Choisissez une option :</label>
-        <select id="option" name="option">
-            <option value="Dracaufeu">Dracaufeu</option>
-            <option value="Les djo d'ses morts">Le djo d'ses morts</option>
-            <option value="Un p'tit wraaaap">Un p'tit wrap</option>
+        <label for="category">Choisissez une option :</label>
+        <select id="category" name="category">
+            <option value="series">Séries</option>
+            <option value="films">Films</option>
+            <option value="animes">Animés</option>
         </select>
 
         <input type="submit"/>

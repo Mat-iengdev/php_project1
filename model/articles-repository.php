@@ -9,6 +9,17 @@ function findArticles() {
     return $articles;
 }
 
+function findArticlesByCategory($category) {
+    $articlesJsonFilePath = '../../model/articles.json';
+
+    $articlesJson = file_get_contents($articlesJsonFilePath);
+    $articles = json_decode($articlesJson, true);
+
+    return array_filter($articles, function($article) use ($category) {
+        return $article['category'] === $category;
+    });
+}
+
 function insertArticle($isArticleCreated) {
     $articlesJsonPathFile = '../../model/articles.json';
     // Je rappelle ma fonction
